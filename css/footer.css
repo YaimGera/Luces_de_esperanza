@@ -1,19 +1,24 @@
-*{
-    margin: 0px;
-    padding: 0%;
+/* Yaim Gerardo Serrano Corral y Leslie Lizbeth Roman Vega,
+2AmPr */
+* {
+    margin: 0px; /* Establece el margen de todos los elementos a 0 píxeles */
+    padding: 0%; /* Establece el relleno de todos los elementos al 0 por ciento */
     font-family: Arial, Helvetica, sans-serif;
-    }
-    #footer{
-    width: 100%;
-    height: 60px;
-    }
-    #content-footer{
-    width: 100%;
-    height: 60px;
-    background-color: #0f4074;
-    }
-    #p-footer{
-    font-size: 18px;
-    text-align: center;
-    color: aliceblue;
-    }
+}
+
+#footer {
+    width: 100%; /* Ancho del 100% */
+    height: 60px; /* Altura de 60 pixeles */
+}
+
+#content-footer {
+    width: 100%; /* Ancho del 100% */
+    height: 60px; /* Altura de 60 pixeles */
+    background-color: #0f4074; /* Color de fondo azul oscuro */
+}
+
+#p-footer {
+    font-size: 18px; /* Tamaño de fuente de 18 pixeles */
+    text-align: center; /* Alineado al centro */
+    color: aliceblue; /* Texto de color blanco */
+}
