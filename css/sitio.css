@@ -49,7 +49,7 @@ h3 {
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
-    width: 90%; /* Ancho máximo */
+    width: 80%; /* Ancho máximo de 80%*/
     margin: auto;
 }
 
@@ -150,8 +150,8 @@ nav input {
 nav label {
     cursor: pointer;
     display: block;
-    font: 2em/1 'Oswald', sans-serif;
-    padding: 0.8em;
+    font: 1.5em/1 'Oswald', sans-serif;
+    padding: 0.9em;
 }
 
 /* Estilos para el icono del menú y su animación */
@@ -207,11 +207,11 @@ nav input[type=checkbox]:checked+label #menu-icon:after {
 
 /* Estilo para el overlay */
 nav input:checked~#overlay {
-    background: #cae1ff; /* Se elijio un color claro */
+    background: #108bff; /* Se elijio un color claro */
     bottom: 0;
     left: 0;
-    height: 100vh;
-    position: fixed;
+    height: 10vh;
+    position: relative;
     right: 0;
     top: 0;
     width: 100vw;
@@ -220,7 +220,7 @@ nav input:checked~#overlay {
 
 /* Estilo para la lista de navegación */
 nav ul {
-    font-size: 1.5em;
+    font-size: 1.6em;
     list-style: none;
     margin: 0;
     max-height: 0;
@@ -231,7 +231,7 @@ nav ul {
 }
 
 nav input:checked~ul {
-    margin: 1em;
+    margin: 1px;
     max-height: inherit;
     opacity: 1;
 }
@@ -241,7 +241,7 @@ nav ul>li {
 }
 
 nav ul a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 2em;
 }
@@ -266,7 +266,7 @@ button {
 
 button:hover {
     color: ghostwhite; /* Texto blanco al pasar el ratón */
-    background: black; /* Fondo negro al pasar el ratón */
+    background: rgb(0, 0, 0); /* Fondo negro al pasar el ratón */
 }
 
 /* Estilos para las líneas que aparecen al pasar el ratón sobre el botón */
