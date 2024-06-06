@@ -1,44 +1,54 @@
+/* Yaim Gerardo Serrano Corral y Leslie Lizbeth Roman Vega,
+2AmPr */
 body {
-    background-color: #000000;
+    background-color: #000000; /* Color de fondo en negro para que luzcan los estilos de boton */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     color: #333333;
     line-height: 1.6;
-    }
-    *{
+}
+
+* {
     margin: 0px;
     padding: 0px;
-    }
-    header{
+}
+
+header {
     width: 100%;
     height: 100px;
-    }
-    footer{
+}
+
+footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 51px;
-    }
-    iframe{
+}
+
+iframe {
     width: 100%;
     height: auto;
     border-style: none;
-    }
-    hr {
+}
+
+hr {
     border: none;
     border-top: 8px solid #000000;
     margin: 40px auto;
     max-width: 80%;
     border-radius: 100px;
-    }
-    .container {
+}
+
+.container {
     text-align: center;
-    }
-    form {
-        color: #ffffff;
-    }
-    .glow-on-hover {
+}
+
+form {
+    color: #ffffff;
+}
+
+.glow-on-hover {
     width: 100px;
     height: 50px;
     border: none;
@@ -49,10 +59,11 @@ body {
     position: relative;
     z-index: 0;
     border-radius: 10px;
-    }
-    .glow-on-hover::before {
+}
+/* Este es un estilo de boton, el cual alrededor del boton tiene colores que va cambiando */
+.glow-on-hover::before {
     content: '';
-    background: linear-gradient(45deg,#ff0000, #ff7300,#fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
     left: -2px;
@@ -65,11 +76,13 @@ body {
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
-    }
-    .glow-on-hover:before {
+}
+
+.glow-on-hover:before {
     opacity: 1;
-    }
-    .glow-on-hover::after {
+}
+
+.glow-on-hover::after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -79,9 +92,18 @@ body {
     left: 0;
     top: 0;
     border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
     }
-    @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+
+    50% {
+        background-position: 400% 0;
     }
+
+    100% {
+        background-position: 0 0;
+    }
+}
