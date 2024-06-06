@@ -1,33 +1,31 @@
+/* Yaim Gerardo Serrano Corral y Leslie Lizbeth Roman Vega,
+2AmPr */
 body {
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
+    background-color: #ffffff; /* Fondo blanco */
+    margin: 0; /* Sin márgenes externos */
+    padding: 0; /* Sin relleno */
     font-family: Arial, sans-serif;
-    color: #333333;
-    line-height: 1.6;
+    color: #333333; /* Color de texto, el cual se elijio un color oscuro */
+    line-height: 1.6; /* Altura de línea */
 }
 
+/* Se reinicia los márgenes y rellenos de todos los elementos */
 * {
     margin: 0px;
     padding: 0px;
 }
 
-header {
-    width: 100%;
-    height: 100px;
-}
-
 footer {
-    position: fixed;
+    position: fixed; /* Se fija en la parte inferior de la ventana */
     bottom: 0;
     width: 100%;
-    height: 51px;
+    height: 51px; /* Altura */
 }
 
 iframe {
     width: 100%;
-    height: auto;
-    border-style: none;
+    height: auto; /* Ajuste automático de la altura */
+    border-style: none; /* Sin borde */
 }
 
 h1 {
@@ -35,35 +33,37 @@ h1 {
     color: #FFFFFF;
     background-color: #0f4074;
     padding: 50px;
-    border-radius: 1px;
+    border-radius: 1px; /* Para borde redondeado */
 }
 
 h2 {
-    text-align: center;
+    text-align: center; /* Texto alineado al centro */
     color: #FFFFFF;
     background-color: #ff0000;
 }
 
 h3 {
-    text-align: center;
+    text-align: center; /* Texto alineado al centro */
 }
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
+    width: 90%; /* Ancho máximo */
+    margin: auto;
 }
 
 img {
     max-width: 100%;
-    height: auto;
+    height: auto; /* Ajuste automático de la altura */
 }
 
 hr {
     border: none;
-    border-top: 8px solid #140056;
+    border-top: 8px solid #666666;
     margin: 40px auto;
-    max-width: 80%;
-    border-radius: 100px;
+    max-width: 80%; /* Ancho maximo de 80% */
+    border-radius: 100px; /* Borde redondeado */
 }
 
 table {
@@ -86,13 +86,6 @@ th {
     color: #ffffff;
 }
 
-hr {
-    border: none;
-    border-top: 5px solid gray;
-    width: 100%;
-    margin-top: 20px;
-}
-
 li {
     font-size: 13px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -108,39 +101,38 @@ video {
 }
 
 .container {
-    text-align: center;
+    text-align: center; /* Se centrara todo lo que este dentro de container */
+    margin: 0 auto; /* Centrado horizontal */
+    max-width: 80em; /* Con ancho máximo de 80em*/
 }
 
 a {
-    color: #a2ed56;
+    color: #ffffff;
 }
 
 a:hover {
-    color: #83e4e2;
+    color: #0400ff;
     text-decoration: none;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 80em;
 }
 
 main .container {
     padding: 1em;
 }
 
+/* Clase para texto oculto */
 .screen-reader-text {
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
     height: 1px;
     overflow: hidden;
-    position: absolute !important;
+    position: absolute;
     width: 1px;
 }
 
+/* Estilos para la barra de navegación */
 nav {
-    background: #108bff;
-    color: #ffffff;
+    background: #108bff; /* Fondo azul */
+    color: #ffffff; /* Texto blanco */
     left: 0;
     position: relative;
     top: 0;
@@ -148,6 +140,7 @@ nav {
     z-index: 9999;
 }
 
+/* Estilo para el icono del menú */
 nav input {
     opacity: 0;
     position: absolute;
@@ -158,9 +151,10 @@ nav label {
     cursor: pointer;
     display: block;
     font: 2em/1 'Oswald', sans-serif;
-    padding: 0.5em;
+    padding: 0.8em;
 }
 
+/* Estilos para el icono del menú y su animación */
 #menu-icon,
 #menu-icon:before,
 #menu-icon:after {
@@ -211,8 +205,9 @@ nav input[type=checkbox]:checked+label #menu-icon:after {
     transform: rotate(45deg);
 }
 
+/* Estilo para el overlay */
 nav input:checked~#overlay {
-    background: #cae1ff;
+    background: #cae1ff; /* Se elijio un color claro */
     bottom: 0;
     left: 0;
     height: 100vh;
@@ -223,6 +218,7 @@ nav input:checked~#overlay {
     z-index: -1;
 }
 
+/* Estilo para la lista de navegación */
 nav ul {
     font-size: 1.5em;
     list-style: none;
@@ -231,7 +227,7 @@ nav ul {
     opacity: 0;
     overflow: hidden;
     padding: 0;
-    text-align: center;
+    text-align: center; /* Alineado al centro */
 }
 
 nav input:checked~ul {
@@ -245,7 +241,7 @@ nav ul>li {
 }
 
 nav ul a {
-    color: #000000 !important;
+    color: #000000;
     text-decoration: none;
     font-size: 2em;
 }
@@ -254,102 +250,99 @@ nav ul a:hover {
     text-decoration: underline;
 }
 
+/* Estilos para los botones */
 button {
-    margin: 10px;
-    position: relative;
-    padding: 10px 105px;
-    border: none;
-    outline: none;
-    background: ghostwhite;
-    color: black;
-    cursor: pointer;
-    transition: .5s;
-    overflow: hidden;
+    margin: 10px; /* Márgenes exteriores */
+    position: relative; /* Posición relativa para alinear el texto */
+    padding: 10px 105px; /* Relleno para el botón */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno alrededor del botón */
+    background: ghostwhite; /* Fondo blanco */
+    color: black; /* Texto negro */
+    cursor: pointer; /* Cambio de cursor al pasar el ratón */
+    transition: .5s; /* Transición suave */
+    overflow: hidden; /* Se oculta el desbordamiento */
 }
 
 button:hover {
-    color: ghostwhite;
-    background: black;
+    color: ghostwhite; /* Texto blanco al pasar el ratón */
+    background: black; /* Fondo negro al pasar el ratón */
 }
 
+/* Estilos para las líneas que aparecen al pasar el ratón sobre el botón */
 button span {
-    position: absolute;
-    background: lawngreen;
-    transition: .5s;
+    position: absolute; /* Posición absoluta para superponer las líneas */
+    background: lawngreen; /* Color de las líneas */
+    transition: .5s; /* Con una transición suave */
 }
 
+/* Estilos para cada una de las líneas */
 button span:nth-child(1) {
     width: 100%;
-    height: 1px;
+    height: 1px; /* Grosor de la línea de 1 pixel*/
     top: 0;
-    left: -100%;
+    left: -100%; /* Inicialmente fuera del botón */
 }
 
 button span:nth-child(2) {
     width: 100%;
     height: 1px;
     bottom: 0;
-    right: -100%;
+    right: -100%; /* Inicialmente fuera del botón */
 }
 
 button span:nth-child(3) {
     width: 1px;
     height: 100%;
-    bottom: -100%;
+    bottom: -100%; /* Inicialmente fuera del botón */
     left: 0;
 }
 
 button span:nth-child(4) {
     width: 1px;
     height: 100%;
-    top: -100%;
+    top: -100%; /* Inicialmente fuera del botón */
     right: 0;
 }
 
+/* Animación de las líneas al pasar el ratón sobre el botón */
 button:hover span:nth-child(1) {
-    left: 0;
+    left: 0; /* Aparece desde la izquierda */
 }
 
 button:hover span:nth-child(2) {
-    right: 0;
+    right: 0; /* Aparece desde la derecha */
 }
 
 button:hover span:nth-child(3) {
-    bottom: 0;
+    bottom: 0; /* Aparece desde abajo */
 }
 
 button:hover span:nth-child(4) {
-    top: 0;
+    top: 0; /* Aparece desde arriba */
 }
 
+/* Media queries para dispositivos de pantalla pequeña */
 @media (max-width: 768px) {
     img {
-        width: 80%;
-        margin: auto;
+        width: 80%; /* Ancho del 80% para las imágenes */
+        margin: auto; /* Centrado horizontal */
     }
 
     video {
-        width: 80%;
-        margin: auto;
-    }
-
-    p {
-        width: 90%;
-        margin: auto;
+        width: 80%; /* Ancho del 80% para los videos */
+        margin: auto; /* Centrado horizontal */
     }
 }
 
+/* Media queries para dispositivos de pantalla grande */
 @media (min-width: 1024px) {
     img {
-        max-width: 30%;
+        max-width: 30%; /* Ancho máximo del 30% para las imágenes */
     }
 
     video {
-        max-width: 100%;
-        border-radius: 100px;
-    }
-
-    p {
-        max-width: 100%;
+        max-width: 100%; /* Ancho máximo del 100% para los videos */
+        border-radius: 100px; /* Borde redondeado */
     }
 }
